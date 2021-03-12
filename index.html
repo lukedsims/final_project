@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Thing Ever</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  </head>
+  ​
+  <body>
+    <h1 class="text-center m-8 capitalize font-bold text-2xl text-purple-500">Welcome to Powder Hounds</h1>
+  
+    <div class="px-16 md:flex items-center bg-gray-100">
+      <div class="md:w-1/2 m-auto md:p-16">
+        <img class="rounded-xl" src="michael-cox-2aW9P1Hipfg-unsplash.jpg">
+      </div>
+      <div class="md:w-1/2 p-8 space-y-4">
+        <h2 class="font-bold text-xl">It's Easy.</h2>
+        <p>Five click promise.</p>
+        <h2 class="font-bold text-xl">It's Local.</h2>
+        <p>Neighbors helping neighbors.</p>
+        <h2 class="font-bold text-xl">It's Affordable.</h2>
+        <p>Browse and Bid Solution.</p>
+      </div>
+    </div>
+  ​
+    <div class="m-8">
+      <h1 class="text-3xl font-bold text-center">Sign up to learn more</h1>
+  ​
+      <form netlify class="mx-auto mt-8 w-64">
+        <label class="block mt-4 font-bold" for="name">What is your name?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="name" name="name">
+  
+        <label class="block mt-4 font-bold" for="favorite-color">What is your zip code?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="favorite-color" name="favoriteColor">
+  
+        <label class="block mt-4 font-bold" for="favorite-color">What is your email?</label>
+        <input class="p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500" type="text" id="favorite-color" name="favoriteColor">
+
+        <button class="block mt-4 text-white bg-purple-500 rounded px-4 py-2">Submit form!</button>
+      </form>
+    </div>
+  </body>
 
 <body>
   <div class="sign-in-or-sign-out"></div>
@@ -21,7 +55,13 @@
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {} // replace
+    var firebaseConfig = {apiKey: "AIzaSyAtHdtLCVVrmiE9nGcnfGhUXfixlRCVte0",
+    authDomain: "kiei-final-f516f.firebaseapp.com",
+    projectId: "kiei-final-f516f",
+    storageBucket: "kiei-final-f516f.appspot.com",
+    messagingSenderId: "512055052381",
+    appId: "1:512055052381:web:ede23950735732b738e5b4",
+    measurementId: "G-P0NMJWZ9VW"} // replace
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
